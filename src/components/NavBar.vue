@@ -12,7 +12,7 @@
 <template>
     <nav>
         <div class="sm:hidden flex  flex-col justify-between mx-auto fixed top-0 pl-2 pr-6 bg-white w-screen">
-            <a class="flex py-2" @click="toggleSideNav">
+            <a class="flex py-2 hover:cursor-pointer" @click="toggleSideNav">
                 <span class="material-icons-round">menu</span>
                 <span class="pl-1">Shark Tank India</span>
             </a>
