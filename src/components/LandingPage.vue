@@ -1,5 +1,5 @@
 <script setup>
-import landingPageImage from '../assets/images/landing-page-image.png';
+  import landingPageImage from '../assets/images/landing-page-image.png';
 </script>
 
 <template>
