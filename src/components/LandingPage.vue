@@ -5,13 +5,17 @@ import landingPageImage from '../assets/images/landing-page-image.png';
 <template>
   <div class="h-[94vh] grid grid-cols-12 grid-rows-6">
     <div class="row-span-5 col-span-12 px-8 items-center relative" id="main-div">
-      <div class="absolute top-1/2 items-center z-10">
+      <div class="absolute top-2/3 lg:top-1/2 items-center z-10">
         <h1 class="text-3xl sm:text-4xl lg:text-7xl py-1 bg-white">Let's Explore Shark Tank India.</h1>
         <h2 class="text-xl sm:text-2xl lg:text-4xl font-thin py-2 w-fit bg-white">(season one) - A dataviz project.</h2>
       </div>
-      <img :src="landingPageImage" alt="landing page image" class="absolute top-0 right-0">
+      <img :src="landingPageImage" alt="landing page image" class="absolute top-0 right-0 lg:h-full">
     </div>
     <div class="row-span-1 col-span-12 relative">
+      <span class="px-8 absolute -top-4  md:top-1/2 font-light">Data Visualization and Design - Urmila J</span>
+      <span class="px-8 py-6 absolute -top-4 md:top-1/2 font-light">Data Source - 
+        <a href="https://www.kaggle.com/datasets/thirumani/shark-tank-india" class="text-sky-500">[Kaggle: Dataset] - Satya Thirumani</a>
+      </span>
       <span class="pb-8 absolute left-1/2 bottom-0 mb-4">scroll</span>
       <span class="material-icons-round pl-1 absolute left-1/2 bottom-0 mb-4">keyboard_double_arrow_down</span>
     </div>
