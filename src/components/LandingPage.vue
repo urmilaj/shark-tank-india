@@ -12,12 +12,12 @@
       <img :src="landingPageImage" alt="landing page image" class="absolute top-0 right-0 lg:h-full">
     </div>
     <div class="row-span-1 col-span-12 relative">
-      <span class="px-8 absolute -top-4  md:top-1/2 font-light">Data Visualization and Design - Urmila J</span>
-      <span class="px-8 py-6 absolute -top-4 md:top-1/2 font-light">Data Source - 
+      <span class="px-8 absolute top-0 lg:top-1/4 font-light">Data Visualization and Design - Urmila J</span>
+      <span class="px-8 py-6 absolute top-0 lg:top-1/4 font-light">Data Source - 
         <a href="https://www.kaggle.com/datasets/thirumani/shark-tank-india" class="text-sky-500">[Kaggle: Dataset] - Satya Thirumani</a>
       </span>
-      <span class="pb-8 absolute left-1/2 bottom-0 mb-4">scroll</span>
-      <span class="material-icons-round pl-1 absolute left-1/2 bottom-0 mb-4">keyboard_double_arrow_down</span>
+      <span class="absolute left-1/2 top-1/2 lg:top-1/4">scroll</span>
+      <span class="material-icons-round pl-1 absolute left-1/2 top-3/4 lg:top-1/2 mb-2">keyboard_double_arrow_down</span>
     </div>
   </div>
 </template>
