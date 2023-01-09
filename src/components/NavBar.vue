@@ -11,7 +11,7 @@
 </script>
 <template>
     <nav>
-        <div class="sm:hidden flex  flex-col justify-between mx-auto fixed top-0 pl-2 pr-6 bg-white w-screen">
+        <div class="sm:hidden flex  flex-col justify-between mx-auto pl-2 pr-6 bg-white">
             <a class="flex py-2 hover:cursor-pointer" @click="toggleSideNav">
                 <span class="material-icons-round">menu</span>
                 <span class="pl-1">Shark Tank India</span>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
         </div>
-        <div class="hidden md:flex flex-wrap items-center justify-between mx-auto fixed top-0 bg-white w-screen pl-2 pr-6">
+        <div class="hidden md:flex flex-wrap items-center justify-between mx-auto  bg-white pl-2 pr-6">
             <a href="#landing_page" class="flex items-center p-4 hover:text-[#016DAC]">
                 <span>Shark Tank India</span>
             </a>

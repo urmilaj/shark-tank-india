@@ -6,18 +6,22 @@ import ExplanatoryPage from './components/ExplanatoryPage.vue';
 import ExploratoryPage from './components/ExploratoryPage.vue';
 </script>
 <template>
-  <NavBar></NavBar>
-  <div id="landing_page">
-    <LandingPage></LandingPage>
-  </div>
-  <div id="About">
-    <AboutPage></AboutPage>
-  </div>
-  <div id="Explanatory">
-    <ExplanatoryPage></ExplanatoryPage>
-  </div>
-  <div id="Exploratory">
-    <ExploratoryPage></ExploratoryPage>
+  <div>
+    <div class="sticky top-0 z-10">
+      <NavBar></NavBar>
+    </div>
+    <div id="landing_page">
+      <LandingPage></LandingPage>
+    </div>
+    <div id="About">
+      <AboutPage></AboutPage>
+    </div>
+    <div id="Explanatory">
+      <ExplanatoryPage></ExplanatoryPage>
+    </div>
+    <div id="Exploratory">
+      <ExploratoryPage></ExploratoryPage>
+    </div>
   </div>
 </template>
 
