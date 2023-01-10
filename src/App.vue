@@ -7,7 +7,7 @@ import ExploratoryPage from './components/ExploratoryPage.vue';
 </script>
 <template>
   <div>
-    <div class="sticky top-0 z-10">
+    <div class="sticky top-0 z-20">
       <NavBar></NavBar>
     </div>
     <div id="landing_page">

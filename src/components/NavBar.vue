@@ -11,12 +11,12 @@
 </script>
 <template>
     <nav>
-        <div class="sm:hidden flex  flex-col justify-between mx-auto pl-2 pr-6 bg-white">
+        <div class="sm:hidden flex  flex-col justify-between mx-auto pl-2 pr-6 bg-white relative">
             <a class="flex py-2 hover:cursor-pointer" @click="toggleSideNav">
                 <span class="material-icons-round">menu</span>
                 <span class="pl-1">Shark Tank India</span>
             </a>
-            <div v-if="showSideNav === true" class="mb-4 basis-6/12">
+            <div v-if="showSideNav === true" class="mb-4 basis-6/12 absolute top-10 bg-white w-3/4">
                 <ul>
                     <li v-for="(link, index) in navMobileLinks" :key="index" class="p-2">
                         <a v-if="link === 'Home'" href="#landing_page" @click="toggleSideNav">Home</a>
