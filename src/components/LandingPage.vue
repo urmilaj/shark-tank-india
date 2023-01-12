@@ -6,8 +6,8 @@
   <div class="h-[93vh] grid grid-cols-12 grid-rows-6">
     <div class="row-span-5 col-span-12 px-8 items-center relative" id="main-div">
       <div class="absolute top-2/3 md:top-3/4 lg:top-1/2 items-center z-10">
-        <h1 class="text-3xl sm:text-4xl lg:text-7xl py-1 bg-white">Let's Explore Shark Tank India.</h1>
-        <h2 class="text-xl sm:text-2xl lg:text-4xl font-thin py-2 w-fit bg-white">(season one) - A dataviz project.</h2>
+        <h1 class="text-3xl md:text-5xl lg:text-7xl py-1 bg-white">Let's Explore Shark Tank India.</h1>
+        <h2 class="text-2xl md:text-4xl lg:text-4xl font-thin py-2 w-fit bg-white">(season one) - A dataviz project.</h2>
       </div>
       <img :src="landingPageImage" alt="landing page image" class="absolute top-0 right-0 h-[80%] md:h-3/4 lg:h-[100%]">
     </div>
