@@ -1,15 +1,21 @@
 <script setup>
-  import { ref, computed, onMounted ,onUpdated, watchEffect, defineExpose, watch } from 'vue';
+  import { ref, computed, onMounted ,onUpdated, watchEffect, watch } from 'vue';
   import * as d3 from 'd3';
   import treemapData from '../assets/data/treemap.json';
+  import treemapTooltip from '../assets/data/treemapTooltip.json';
 
   const shark = d3.group(treemapData, d=>d.shark);
+  const treemapTooltipData = d3.group(treemapTooltip, d=>d.shark)
 
   const getJudgeImage = (name) => {
     const removeSpaceInSharkName = name.replace(/\s/g, '');
     return new URL(`../assets/images/judges/${removeSpaceInSharkName}.png`, import.meta.url).href;
   };
   
+  const getSharkStartupInvestment = (data, filterName) => {
+    return data.filter(v => v.industry_name === filterName)
+  }
+
   let svgDimensions =  ref(null);
 
   onMounted(() => {
@@ -22,8 +28,10 @@
   function drawTreeMap(sharkData , value) {
       let width;
       let height;
-      width = value?.width  === undefined ? 0 : Math.floor(value.width - 20);
-      height = value?.height === undefined ? 0 : Math.floor(value.height - 20);
+      width = value?.width  === undefined ? 0 : Math.floor(value.width - 8);
+      height = value?.height === undefined ? 0 : Math.floor(value.height - 8);
+
+      const treemapLayoutType =  sharkData[0].shark === 'Vineeta Singh' && width <= 500 ? d3.treemapSlice : d3.treemapBinary;
 
       const treemapSharkData = d3.group(sharkData, d=>d.shark);
   
@@ -31,10 +39,12 @@
   
       const rootNode = d3.hierarchy(treemapSharkData);
       rootNode.sum(d => d.industry_deals)
+
+      treeMapLayout.tile(treemapLayoutType);
   
       treeMapLayout(rootNode);
   
-      return rootNode.descendants().slice(2);  
+      return rootNode.descendants().slice(2);
   };   
 
 </script>
@@ -48,7 +58,7 @@
       Voluptate repudiandae et natus eligendi nemo officiis, minima assumenda. Excepturi repellendus odio unde voluptate debitis expedita eos atque vitae quo! Ex repellendus temporibus provident eligendi blanditiis sint tempora, quibusdam iusto?</p>
     </div>
     <div class="grid grid-cols-12 lg:p-2">
-        <div v-for="(portfolio,i) in shark" :key="i" class="relative col-span-12 lg:col-span-6 xl:col-span-4 border-2  border-gray-200 rounded-lg mx-1 md:mx-14 lg:mx-4 my-10">
+        <div v-for="(portfolio,i) in shark" :key="i" class="relative col-span-12 lg:col-span-6 xl:col-span-4 border-2  border-gray-200 rounded-lg mx-1 md:mx-14 lg:mx-1 my-10">
           <img class="absolute p-1 bg-white inset-x-0.5 -top-14 mx-auto w-28 rounded-full border-2 border-gray-200" :src="getJudgeImage(portfolio[0])">
           <p class="mx-auto mt-20 mb-4 text-xl text-center font-semibold">{{ portfolio[0] }}</p>
           <div class="mx-4">
@@ -66,9 +76,15 @@
               <p class="mx-2 text-center">Industry Investment Mix</p>
               <div class="mt-2 h-[50vh]">
                 <svg class="border border-black svg" width="100%" height="100%">
-                  <g transform="translate(10,10)">
-                    <g v-for="(s,i) in drawTreeMap(portfolio[1], svgDimensions)" :key="i" :transform="`translate(${s.x0},${s.y0})`">
-                      <rect :width="`${s.x1-s.x0}`" :height="`${s.y1 - s.y0}`" fill="#F2F2F2" stroke="white"></rect>
+                  <g transform="translate(3,3)">
+                    <g v-for="(data,i) in drawTreeMap(portfolio[1], svgDimensions)" :key="i" :transform="`translate(${data.x0},${data.y0})`">
+                      <rect :width="`${data.x1-data.x0}`" :height="`${data.y1 - data.y0}`" :fill="`${data.data.fill}`" stroke="white" opacity="0.3"></rect>
+                      <text dx="5" y="18" class="text-[0.7rem] md:text-[0.9rem]">{{ data.data.industry_name }}</text>
+                      <text dx="5" y="30" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.industry_percentage }}</text>
+                      <text dx="5" y="42" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.investment_percentage }}</text>
+                      <g :transform="`translate(${(data.x1-data.x0)/2},${(data.y0)/2})`">
+                        <path v-for="(s,index) in getSharkStartupInvestment(treemapTooltipData.get(portfolio[0]), data.data.industry_name)" :key="index" :transform="`translate(${index*10})`" stroke="white" :fill="`${data.data.fill}`" d="M20 11.958q-1.083 0-1.854-.77-.771-.771-.771-1.896 0-1.084.771-1.854.771-.771 1.854-.771 1.083 0 1.854.771.771.77.771 1.854 0 1.125-.771 1.896-.771.77-1.854.77Zm-2.792 21.375V25h-1.666v-8.042q0-1.166.833-1.979.833-.812 1.958-.812h3.334q1.125 0 1.958.812.833.813.833 1.979V25h-1.666v8.333Z"></path>
+                      </g>
                     </g>
                   </g>
                 </svg>
