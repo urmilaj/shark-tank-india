@@ -3,369 +3,410 @@
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "automotive",
+    "industry_name": "Automotive",
     "industry_deals": 1,
     "industry_percentage": "5.29%",
-    "investment_percentage": "₹ 50,00,000"
+    "investment_percentage": "₹ 50,00,000",
+    "fill": "#016DAC"
   },
   {
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "education",
+    "industry_name": "Education",
     "industry_deals": 2,
     "industry_percentage": "6.35%",
-    "investment_percentage": "₹ 60,00,000"
+    "investment_percentage": "₹ 60,00,000",
+    "fill": "#016DAC"
   },
   {
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 11,
     "industry_percentage": "32.12%",
-    "investment_percentage": "₹ 3,03,33,016"
+    "investment_percentage": "₹ 3,03,33,016",
+    "fill": "#016DAC"
   },
   {
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "healthcare",
+    "industry_name": "Healthcare",
     "industry_deals": 2,
     "industry_percentage": "13.23%",
-    "investment_percentage": "₹ 1,25,00,000"
+    "investment_percentage": "₹ 1,25,00,000",
+    "fill": "#016DAC"
   },
   {
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 6,
     "industry_percentage": "16.18%",
-    "investment_percentage": "₹ 1,52,83,000"
+    "investment_percentage": "₹ 1,52,83,000",
+    "fill": "#016DAC"
   },
   {
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 4,
     "industry_percentage": "18.53%",
-    "investment_percentage": "₹ 1,75,00,000"
+    "investment_percentage": "₹ 1,75,00,000",
+    "fill": "#016DAC"
   },
   {
     "shark": "Aman Gupta",
     "total_investment": "₹ 9,44,49,016",
     "number_of_deals": 29,
-    "industry_name": "technology",
+    "industry_name": "Technology",
     "industry_deals": 3,
     "industry_percentage": "8.29%",
-    "investment_percentage": "₹ 78,33,000"
+    "investment_percentage": "₹ 78,33,000",
+    "fill": "#016DAC"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "automotive",
+    "industry_name": "Automotive",
     "industry_deals": 1,
     "industry_percentage": "9.11%",
-    "investment_percentage": "₹ 50,00,000"
+    "investment_percentage": "₹ 50,00,000",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "education",
+    "industry_name": "Education",
     "industry_deals": 1,
     "industry_percentage": "6.38%",
-    "investment_percentage": "₹ 35,00,000"
+    "investment_percentage": "₹ 35,00,000",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 6,
     "industry_percentage": "15.03%",
-    "investment_percentage": "₹ 82,50,002"
+    "investment_percentage": "₹ 82,50,002",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "healthcare",
+    "industry_name": "Healthcare",
     "industry_deals": 3,
     "industry_percentage": "8.75%",
-    "investment_percentage": "₹ 48,00,025"
+    "investment_percentage": "₹ 48,00,025",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 8,
     "industry_percentage": "32.80%",
-    "investment_percentage": "₹ 1,80,00,000"
+    "investment_percentage": "₹ 1,80,00,000",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 4,
     "industry_percentage": "25.51%",
-    "investment_percentage": "₹ 1,40,00,000"
+    "investment_percentage": "₹ 1,40,00,000",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Anupam Mittal",
     "total_investment": "₹ 5,48,83,027",
     "number_of_deals": 24,
-    "industry_name": "technology",
+    "industry_name": "Technology",
     "industry_deals": 1,
     "industry_percentage": "2.43%",
-    "investment_percentage": "₹ 13,33,000"
+    "investment_percentage": "₹ 13,33,000",
+    "fill": "#1B98C6"
   },
   {
     "shark": "Ashneer Grover",
     "total_investment": "₹ 6,53,33,000",
     "number_of_deals": 21,
-    "industry_name": "automotive",
+    "industry_name": "Automotive",
     "industry_deals": 3,
     "industry_percentage": "22.96%",
-    "investment_percentage": "₹ 1,50,00,000"
+    "investment_percentage": "₹ 1,50,00,000",
+    "fill": "#DD7EA5"
   },
   {
     "shark": "Ashneer Grover",
     "total_investment": "₹ 6,53,33,000",
     "number_of_deals": 21,
-    "industry_name": "education",
+    "industry_name": "Education",
     "industry_deals": 3,
     "industry_percentage": "16.84%",
-    "investment_percentage": "₹ 1,10,00,000"
+    "investment_percentage": "₹ 1,10,00,000",
+    "fill": "#DD7EA5"
   },
   {
     "shark": "Ashneer Grover",
     "total_investment": "₹ 6,53,33,000",
     "number_of_deals": 21,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 8,
     "industry_percentage": "32.65%",
-    "investment_percentage": "₹ 2,13,33,000"
+    "investment_percentage": "₹ 2,13,33,000",
+    "fill": "#DD7EA5"
   },
   {
     "shark": "Ashneer Grover",
     "total_investment": "₹ 6,53,33,000",
     "number_of_deals": 21,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 3,
     "industry_percentage": "7.65%",
-    "investment_percentage": "₹ 50,00,000"
+    "investment_percentage": "₹ 50,00,000",
+    "fill": "#DD7EA5"
   },
   {
     "shark": "Ashneer Grover",
     "total_investment": "₹ 6,53,33,000",
     "number_of_deals": 21,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 2,
     "industry_percentage": "9.95%",
-    "investment_percentage": "₹ 65,00,000"
+    "investment_percentage": "₹ 65,00,000",
+    "fill": "#DD7EA5"
   },
   {
     "shark": "Ashneer Grover",
     "total_investment": "₹ 6,53,33,000",
     "number_of_deals": 21,
-    "industry_name": "technology",
+    "industry_name": "Technology",
     "industry_deals": 2,
     "industry_percentage": "9.95%",
-    "investment_percentage": "₹ 65,00,000"
+    "investment_percentage": "₹ 65,00,000",
+    "fill": "#DD7EA5"
   },
   {
     "shark": "Ghazal Alagh",
     "total_investment": "₹ 1,29,99,025",
     "number_of_deals": 7,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 3,
     "industry_percentage": "52.57%",
-    "investment_percentage": "₹ 68,33,000"
+    "investment_percentage": "₹ 68,33,000",
+    "fill": "#D7888F"
   },
   {
     "shark": "Ghazal Alagh",
     "total_investment": "₹ 1,29,99,025",
     "number_of_deals": 7,
-    "industry_name": "healthcare",
+    "industry_name": "Healthcare",
     "industry_deals": 2,
     "industry_percentage": "15.39%",
-    "investment_percentage": "₹ 20,00,025"
+    "investment_percentage": "₹ 20,00,025",
+    "fill": "#D7888F"
   },
   {
     "shark": "Ghazal Alagh",
     "total_investment": "₹ 1,29,99,025",
     "number_of_deals": 7,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 1,
     "industry_percentage": "19.23%",
-    "investment_percentage": "₹ 25,00,000"
+    "investment_percentage": "₹ 25,00,000",
+    "fill": "#D7888F"
   },
   {
     "shark": "Ghazal Alagh",
     "total_investment": "₹ 1,29,99,025",
     "number_of_deals": 7,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 1,
     "industry_percentage": "12.82%",
-    "investment_percentage": "₹ 16,66,000"
+    "investment_percentage": "₹ 16,66,000",
+    "fill": "#D7888F"
   },
   {
     "shark": "Namita Thapar",
     "total_investment": "₹ 7,05,33,027",
     "number_of_deals": 24,
-    "industry_name": "education",
+    "industry_name": "Education",
     "industry_deals": 3,
     "industry_percentage": "19.14%",
-    "investment_percentage": "₹ 1,35,00,000"
+    "investment_percentage": "₹ 1,35,00,000",
+    "fill": "#BC9EAE"
   },
   {
     "shark": "Namita Thapar",
     "total_investment": "₹ 7,05,33,027",
     "number_of_deals": 24,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 6,
     "industry_percentage": "15.95%",
-    "investment_percentage": "₹ 1,12,50,002"
+    "investment_percentage": "₹ 1,12,50,002",
+    "fill": "#BC9EAE"
   },
   {
     "shark": "Namita Thapar",
     "total_investment": "₹ 7,05,33,027",
     "number_of_deals": 24,
-    "industry_name": "healthcare",
+    "industry_name": "Healthcare",
     "industry_deals": 3,
     "industry_percentage": "9.92%",
-    "investment_percentage": "₹ 70,00,025"
+    "investment_percentage": "₹ 70,00,025",
+    "fill": "#BC9EAE"
   },
   {
     "shark": "Namita Thapar",
     "total_investment": "₹ 7,05,33,027",
     "number_of_deals": 24,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 9,
     "industry_percentage": "40.10%",
-    "investment_percentage": "₹ 2,82,83,000"
+    "investment_percentage": "₹ 2,82,83,000",
+    "fill": "#BC9EAE"
   },
   {
     "shark": "Namita Thapar",
     "total_investment": "₹ 7,05,33,027",
     "number_of_deals": 24,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 2,
     "industry_percentage": "12.76%",
-    "investment_percentage": "₹ 90,00,000"
+    "investment_percentage": "₹ 90,00,000",
+    "fill": "#BC9EAE"
   },
   {
     "shark": "Namita Thapar",
     "total_investment": "₹ 7,05,33,027",
     "number_of_deals": 24,
-    "industry_name": "technology",
+    "industry_name": "Technology",
     "industry_deals": 1,
     "industry_percentage": "2.13%",
-    "investment_percentage": "₹ 15,00,000"
+    "investment_percentage": "₹ 15,00,000",
+    "fill": "#BC9EAE"
   },
   {
     "shark": "Peyush Bansal",
     "total_investment": "₹ 9,06,65,025",
     "number_of_deals": 28,
-    "industry_name": "education",
+    "industry_name": "Education",
     "industry_deals": 3,
     "industry_percentage": "10.48%",
-    "investment_percentage": "₹ 95,00,000"
+    "investment_percentage": "₹ 95,00,000",
+    "fill": "#AB59A0"
   },
   {
     "shark": "Peyush Bansal",
     "total_investment": "₹ 9,06,65,025",
     "number_of_deals": 28,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 4,
     "industry_percentage": "14.15%",
-    "investment_percentage": "₹ 1,28,33,000"
+    "investment_percentage": "₹ 1,28,33,000",
+    "fill": "#AB59A0"
   },
   {
     "shark": "Peyush Bansal",
     "total_investment": "₹ 9,06,65,025",
     "number_of_deals": 28,
-    "industry_name": "healthcare",
+    "industry_name": "Healthcare",
     "industry_deals": 3,
     "industry_percentage": "5.29%",
-    "investment_percentage": "₹ 48,00,025"
+    "investment_percentage": "₹ 48,00,025",
+    "fill": "#AB59A0"
   },
   {
     "shark": "Peyush Bansal",
     "total_investment": "₹ 9,06,65,025",
     "number_of_deals": 28,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 7,
     "industry_percentage": "28.49%",
-    "investment_percentage": "₹ 2,58,33,000"
+    "investment_percentage": "₹ 2,58,33,000",
+    "fill": "#AB59A0"
   },
   {
     "shark": "Peyush Bansal",
     "total_investment": "₹ 9,06,65,025",
     "number_of_deals": 28,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 6,
     "industry_percentage": "18.60%",
-    "investment_percentage": "₹ 1,68,66,000"
+    "investment_percentage": "₹ 1,68,66,000",
+    "fill": "#AB59A0"
   },
   {
     "shark": "Peyush Bansal",
     "total_investment": "₹ 9,06,65,025",
     "number_of_deals": 28,
-    "industry_name": "technology",
+    "industry_name": "Technology",
     "industry_deals": 5,
     "industry_percentage": "22.98%",
-    "investment_percentage": "₹ 2,08,33,000"
+    "investment_percentage": "₹ 2,08,33,000",
+    "fill": "#AB59A0"
   },
   {
     "shark": "Vineeta Singh",
     "total_investment": "₹ 3,65,32,000",
     "number_of_deals": 16,
-    "industry_name": "automotive",
+    "industry_name": "Automotive",
     "industry_deals": 1,
     "industry_percentage": "5.47%",
-    "investment_percentage": "₹ 20,00,000"
+    "investment_percentage": "₹ 20,00,000",
+    "fill": "#69AEBE"
   },
   {
     "shark": "Vineeta Singh",
     "total_investment": "₹ 3,65,32,000",
     "number_of_deals": 16,
-    "industry_name": "food",
+    "industry_name": "Food",
     "industry_deals": 8,
     "industry_percentage": "56.57%",
-    "investment_percentage": "₹ 2,06,66,000"
+    "investment_percentage": "₹ 2,06,66,000",
+    "fill": "#69AEBE"
   },
   {
     "shark": "Vineeta Singh",
     "total_investment": "₹ 3,65,32,000",
     "number_of_deals": 16,
-    "industry_name": "healthcare",
+    "industry_name": "Healthcare",
     "industry_deals": 1,
     "industry_percentage": "5.47%",
-    "investment_percentage": "₹ 20,00,000"
+    "investment_percentage": "₹ 20,00,000",
+    "fill": "#69AEBE"
   },
   {
     "shark": "Vineeta Singh",
     "total_investment": "₹ 3,65,32,000",
     "number_of_deals": 16,
-    "industry_name": "lifestyle",
+    "industry_name": "Lifestyle",
     "industry_deals": 5,
     "industry_percentage": "27.92%",
-    "investment_percentage": "₹ 1,02,00,000"
+    "investment_percentage": "₹ 1,02,00,000",
+    "fill": "#69AEBE"
   },
   {
     "shark": "Vineeta Singh",
     "total_investment": "₹ 3,65,32,000",
     "number_of_deals": 16,
-    "industry_name": "manufacturing",
+    "industry_name": "Manufacturing",
     "industry_deals": 1,
     "industry_percentage": "4.56%",
-    "investment_percentage": "₹ 16,66,000"
+    "investment_percentage": "₹ 16,66,000",
+    "fill": "#69AEBE"
   }
 ]

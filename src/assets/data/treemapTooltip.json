@@ -1,0 +1,1492 @@
+[
+  {
+    "startup_name": "BluePine Foods",
+    "industry_name": "Food",
+    "description": "Frozen Momos",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 5.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Peeschute",
+    "industry_name": "Lifestyle",
+    "description": "Disposable Urine Bag",
+    "equity_investment": "₹ 75,00,000",
+    "equity_stake": 6,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Bummer",
+    "industry_name": "Lifestyle",
+    "description": "Underwear",
+    "equity_investment": "₹ 37,50,000 ",
+    "equity_stake": 3.75,
+    "debt_investment": "₹ 0 ",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Revamp Moto",
+    "industry_name": "Automotive",
+    "description": "E-Bike Mitra bud-e RM",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 0.75,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Skippi Ice Pops",
+    "industry_name": "Food",
+    "description": "Ice-Pops",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Raising Superstars",
+    "industry_name": "Education",
+    "description": "Child Development App",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Beyond Snack",
+    "industry_name": "Food",
+    "description": "Kerala Banana Chips",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 1.25,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Altor",
+    "industry_name": "Manufacturing",
+    "description": "Smart Helmets",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 3.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Ariro",
+    "industry_name": "Manufacturing",
+    "description": "Wooden Toys",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Nuutjob",
+    "industry_name": "Lifestyle",
+    "description": "Male Intimate Hygiene deo spray",
+    "equity_investment": "₹ 8,33,000",
+    "equity_stake": 6.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Meatyour",
+    "industry_name": "Food",
+    "description": "Eggs",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 6.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "EventBeep",
+    "industry_name": "Education",
+    "description": "Student Community App EdTech",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Farda",
+    "industry_name": "Lifestyle",
+    "description": "Customised Streetwear",
+    "equity_investment": "₹ 15,00,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "LOKA",
+    "industry_name": "Technology",
+    "description": "Metaverse App",
+    "equity_investment": "₹ 13,33,000",
+    "equity_stake": 8,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "The Yarn Bazaar",
+    "industry_name": "Manufacturing",
+    "description": "Yarn-Trading App Online Marketplace for Yarn",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "The Renal Project",
+    "industry_name": "Healthcare",
+    "description": "Home Dialysis Treatment",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Hammer Lifestyle",
+    "industry_name": "Manufacturing",
+    "description": "Smart Audio Products",
+    "equity_investment": "₹ 1,00,00,000",
+    "equity_stake": 40,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Cocofit",
+    "industry_name": "Food",
+    "description": "Coconut based beverage franchise",
+    "equity_investment": "₹ 1.67",
+    "equity_stake": 1.666,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Beyond Water",
+    "industry_name": "Food",
+    "description": "Liquid Water Enhancer",
+    "equity_investment": "₹ 37,50,000",
+    "equity_stake": 7.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Let's Try",
+    "industry_name": "Food",
+    "description": "Healthy Snacks",
+    "equity_investment": "₹ 22,50,000",
+    "equity_stake": 6,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Find Your Kicks India",
+    "industry_name": "lifestyle",
+    "description": "Sneaker Resale",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "WeSTOCK",
+    "industry_name": "Technology",
+    "description": "Brainwired Livestock health monitoring AI pets ear tag",
+    "equity_investment": "₹ 15,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "IN A CAN",
+    "industry_name": "Food",
+    "description": "Can Cocktails",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Get-A-Whey",
+    "industry_name": "Food",
+    "description": "Sugar-Free Icecream",
+    "equity_investment": "₹ 33,33,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Namhya Foods",
+    "industry_name": "Food",
+    "description": "Ayurvedic Enriched Food",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 50,00,000",
+    "interest": 12,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "AyuRythm",
+    "industry_name": "Healthcare",
+    "description": "Ayurvedic Wellness App",
+    "equity_investment": "₹ 75,00,000",
+    "equity_stake": 2.68,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "GrowFitter",
+    "industry_name": "Technology",
+    "description": "Rewards App",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Jain Shikanji",
+    "industry_name": "Food",
+    "description": "Lemonade",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 7.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "SneaKare",
+    "industry_name": "Lifestyle",
+    "description": "Shoe Sneaker kits storage crates",
+    "equity_investment": "₹ 7,00,000",
+    "equity_stake": 4,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Aman Gupta"
+  },
+  {
+    "startup_name": "Heart up my Sleeves",
+    "industry_name": "Lifestyle",
+    "description": "Detachable Sleeves",
+    "equity_investment": "₹ 12,50,000",
+    "equity_stake": 15,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Cos IQ",
+    "industry_name": "Lifestyle",
+    "description": "Intelligent Skincare",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 12.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Revamp Moto",
+    "industry_name": "Automotive",
+    "description": "E-Bike Mitra bud-e RM",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 0.75,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Skippi Ice Pops",
+    "industry_name": "Food",
+    "description": "Ice-Pops",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Vivalyf Innovations",
+    "industry_name": "Healthcare",
+    "description": "Easy Life Prickless Diabetes Testing Machine",
+    "equity_investment": "₹ 28,00,000",
+    "equity_stake": 16.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Meatyour",
+    "industry_name": "Food",
+    "description": "Eggs",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 6.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "ARRCOAT Surface Textures",
+    "industry_name": "Manufacturing",
+    "description": "Wall Building Surface Textures",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 15,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "LOKA",
+    "industry_name": "Technology",
+    "description": "Metaverse App",
+    "equity_investment": "₹ 13,33,000",
+    "equity_stake": 8,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Annie",
+    "industry_name": "Technology",
+    "description": "Thinkerbell labs Braille Literary Device",
+    "equity_investment": "₹ 35,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Carragreen",
+    "industry_name": "Manufacturing",
+    "description": "Eco-Friendly boxes",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "The Yarn Bazaar",
+    "industry_name": "Manufacturing",
+    "description": "Yarn-Trading App Online Marketplace for Yarn",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Cocofit",
+    "industry_name": "Food",
+    "description": "Coconut based beverage franchise",
+    "equity_investment": "₹ 1,67,000",
+    "equity_stake": 1.666,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Bamboo India",
+    "industry_name": "Manufacturing",
+    "description": "Bamboo Products",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 1.75,
+    "debt_investment": "₹ 15,00,000",
+    "interest": 12,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Let's Try",
+    "industry_name": "Food",
+    "description": "Healthy Snacks",
+    "equity_investment": "₹ 22,50,000",
+    "equity_stake": 6,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Find Your Kicks India",
+    "industry_name": "Lifestyle",
+    "description": "Sneaker Resale",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "IN A CAN",
+    "industry_name": "Food",
+    "description": "Can Cocktails",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "The Quirky Naari",
+    "industry_name": "Lifestyle",
+    "description": "Customised Apparels",
+    "equity_investment": "₹ 17,50,000",
+    "equity_stake": 12,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Hair Originals",
+    "industry_name": "Lifestyle",
+    "description": "Natural Hair Extensions",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "The Sass Bar",
+    "industry_name": "Lifestyle",
+    "description": "Gifts Soaps",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 17.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "PawsIndia",
+    "industry_name": "Lifestyle",
+    "description": "Dog Products",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 15,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Sunfox Technologies",
+    "industry_name": "Healthcare",
+    "description": "Portable ECG Device",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Watt Technovations",
+    "industry_name": "Healthcare",
+    "description": "Ventilated PPE Kits",
+    "equity_investment": "₹ 25.25",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Tweek Labs",
+    "industry_name": "Lifestyle",
+    "description": "Sportswear",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "Jain Shikanji",
+    "industry_name": "Food",
+    "description": "Lemonade",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 7.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Anupam Mittal"
+  },
+  {
+    "startup_name": "BluePine Foods",
+    "industry_name": "Food",
+    "description": "Frozen Momos",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 5.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Booz Scooters",
+    "industry_name": "Automotive",
+    "description": "Renting e-bike for mobility in private spaces",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 25,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Tagz Foods",
+    "industry_name": "Food",
+    "description": "Healthy Potato Chips Snacks",
+    "equity_investment": "₹ 70,00,000",
+    "equity_stake": 2.75,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Skippi Ice Pops",
+    "industry_name": "Food",
+    "description": "Ice-Pops",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Raising Superstars",
+    "industry_name": "Education",
+    "description": "Child Development App",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Beyond Snack",
+    "industry_name": "Food",
+    "description": "Kerala Banana Chips",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 1.25,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Motion Breeze",
+    "industry_name": "Automotive",
+    "description": "Smart Electric Motorcycle",
+    "equity_investment": "₹ 30,00,000",
+    "equity_stake": 6,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "EventBeep",
+    "industry_name": "Education",
+    "description": "Student Community App EdTech",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "The Yarn Bazaar",
+    "industry_name": "Manufacturing",
+    "description": "Yarn-Trading App Online Marketplace for Yarn",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Bamboo India",
+    "industry_name": "Manufacturing",
+    "description": "Bamboo Products",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 1.75,
+    "debt_investment": "₹ 15,00,000",
+    "interest": 12,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Find Your Kicks India",
+    "industry_name": "Lifestyle",
+    "description": "Sneaker Resale",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Aas Vidyalaya",
+    "industry_name": "Education",
+    "description": "EdTech App",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Otua",
+    "industry_name": "Automotive",
+    "description": "Electric Auto Vehicle Dandera",
+    "equity_investment": "₹ 1,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 99,00,000",
+    "interest": 12,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "WeSTOCK",
+    "industry_name": "Technology",
+    "description": "Brainwired Livestock health monitoring AI pets ear tag",
+    "equity_investment": "₹ 15,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "IN A CAN",
+    "industry_name": "Food",
+    "description": "Can Cocktails",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Get-A-Whey",
+    "industry_name": "Food",
+    "description": "Sugar-Free Icecream",
+    "equity_investment": "₹ 33,33,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Hair Originals",
+    "industry_name": "Lifestyle",
+    "description": "Natural Hair Extensions",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Tweek Labs",
+    "industry_name": "Lifestyle",
+    "description": "Sportswear",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Proxgy",
+    "industry_name": "Technology",
+    "description": "VR",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Nomad Food Project",
+    "industry_name": "Food",
+    "description": "Bacon Jams Relishes",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "Jain Shikanji",
+    "industry_name": "Food",
+    "description": "Lemonade",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 7.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ashneer Grover"
+  },
+  {
+    "startup_name": "The Sass Bar",
+    "industry_name": "Lifestyle",
+    "description": "Gifts Soaps",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 17.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Sunfox Technologies",
+    "industry_name": "Healthcare",
+    "description": "Portable ECG Device",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Watt Technovations",
+    "industry_name": "Healthcare",
+    "description": "Ventilated PPE Kits",
+    "equity_investment": "₹ 25.25",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Humpy A2",
+    "industry_name": "Food",
+    "description": "Organic Milk A2 Products",
+    "equity_investment": "₹ 33,33,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Gold Safe Solutions",
+    "industry_name": "Manufacturing",
+    "description": "Anti-Suicidal Fan Rod",
+    "equity_investment": "₹ 16,66,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Wakao Foods",
+    "industry_name": "Food",
+    "description": "Jackfruit Products",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 7,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Nomad Food Project",
+    "industry_name": "Food",
+    "description": "Bacon Jams Relishes",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Ghazal Alagh"
+  },
+  {
+    "startup_name": "Bummer",
+    "industry_name": "Lifestyle",
+    "description": "Underwear",
+    "equity_investment": "₹ 37,50,000",
+    "equity_stake": 3.75,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Skippi Ice Pops",
+    "industry_name": "Food",
+    "description": "Ice-Pops",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Menstrupedia",
+    "industry_name": "Education",
+    "description": "Menstrual Awareness Comic",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 20,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Altor",
+    "industry_name": "Manufacturing",
+    "description": "Smart Helmets",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 3.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Nuutjob",
+    "industry_name": "Lifestyle",
+    "description": "Male Intimate Hygiene deo spray",
+    "equity_investment": "₹ 8,33,000",
+    "equity_stake": 6.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Farda",
+    "industry_name": "Lifestyle",
+    "description": "Customised Streetwear",
+    "equity_investment": "₹ 15,00,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Auli",
+    "industry_name": "Lifestyle",
+    "description": "Ayurvedic Products Skincare Lifestyle",
+    "equity_investment": "₹ 75,00,000",
+    "equity_stake": 15,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Annie",
+    "industry_name": "Education",
+    "description": "Thinkerbell labs Braille Literary Device",
+    "equity_investment": "₹ 35,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "The Renal Project",
+    "industry_name": "Healthcare",
+    "description": "Home Dialysis Treatment",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Cocofit",
+    "industry_name": "Food",
+    "description": "Coconut based beverage franchise",
+    "equity_investment": "₹ 1,67,000",
+    "equity_stake": 1.666,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Beyond Water",
+    "industry_name": "Food",
+    "description": "Liquid Water Enhancer",
+    "equity_investment": "₹ 37,50,000",
+    "equity_stake": 7.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Find Your Kicks India",
+    "industry_name": "Lifestyle",
+    "description": "Sneaker Resale",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Aas Vidyalaya",
+    "industry_name": "Education",
+    "description": "EdTech App",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "WeSTOCK",
+    "industry_name": "Technology",
+    "description": "Brainwired Livestock health monitoring AI pets ear tag",
+    "equity_investment": "₹ 15,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "IN A CAN",
+    "industry_name": "Food",
+    "description": "Can Cocktails",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Sunfox Technologies",
+    "industry_name": "Healthcare",
+    "description": "Portable ECG Device",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Rare Planet",
+    "industry_name": "Manufacturing",
+    "description": "Handicrafts",
+    "equity_investment": "₹ 65,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Watt Technovations",
+    "industry_name": "Healthcare",
+    "description": "Ventilated PPE Kits",
+    "equity_investment": "₹ 25.25",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Wakao Foods",
+    "industry_name": "Food",
+    "description": "Jackfruit Products",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 7,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Kabaddi Adda",
+    "industry_name": "Lifestyle",
+    "description": "All-Kabaddi App",
+    "equity_investment": "₹ 40,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Colour Me Mad - CMM",
+    "industry_name": "Lifestyle",
+    "description": "Insoles",
+    "equity_investment": "₹ 40,00,000",
+    "equity_stake": 25,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Nomad Food Project",
+    "industry_name": "Food",
+    "description": "Bacon Jams Relishes",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "SneaKare",
+    "industry_name": "Lifestyle",
+    "description": "Shoe Sneaker kits storage crates",
+    "equity_investment": "₹ 7,00,000",
+    "equity_stake": 4,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Store My Goods",
+    "industry_name": "Lifestyle",
+    "description": "Storage solutions",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 25,00,000",
+    "interest": 12,
+    "shark": "Namita Thapar"
+  },
+  {
+    "startup_name": "Vivalyf Innovations",
+    "industry_name": "Healthcare",
+    "description": "Easy Life Prickless Diabetes Testing Machine",
+    "equity_investment": "₹ 28,00,000",
+    "equity_stake": 16.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Ariro",
+    "industry_name": "Manufacturing",
+    "description": "Wooden Toys",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Nuutjob",
+    "industry_name": "Lifestyle",
+    "description": "Male Intimate Hygiene deo spray",
+    "equity_investment": "₹ 8,33,000",
+    "equity_stake": 6.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Meatyour",
+    "industry_name": "Food",
+    "description": "Eggs",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 6.66,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "EventBeep",
+    "industry_name": "Education",
+    "description": "Student Community App EdTech",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "LOKA",
+    "industry_name": "Technology",
+    "description": "Metaverse App",
+    "equity_investment": "₹ 13,33,000",
+    "equity_stake": 8,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Annie",
+    "industry_name": "Education",
+    "description": "Thinkerbell labs Braille Literary Device",
+    "equity_investment": "₹ 35,00,000",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Carragreen",
+    "industry_name": "Manufacturing",
+    "description": "Eco-Friendly boxes",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "The Yarn Bazaar",
+    "industry_name": "Manufacturing",
+    "description": "Yarn-Trading App Online Marketplace for Yarn",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "PNT",
+    "industry_name": "Technology",
+    "description": "Robotics and Automation Solutions",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 25,
+    "debt_investment": "₹ 25,00,000",
+    "interest": 12,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Find Your Kicks India",
+    "industry_name": "Lifestyle",
+    "description": "Sneaker Resale",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Aas Vidyalaya",
+    "industry_name": "Education",
+    "description": "EdTech App",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "RoadBounce",
+    "industry_name": "Technology",
+    "description": "Pothole Detection Software and Data",
+    "equity_investment": "₹ 80,00,000",
+    "equity_stake": 20,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "WeSTOCK",
+    "industry_name": "Technology",
+    "description": "Brainwired Livestock health monitoring AI pets ear tag",
+    "equity_investment": "₹ 15,00,000",
+    "equity_stake": 2.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "The State Plate",
+    "industry_name": "Food",
+    "description": "Delicacies",
+    "equity_investment": "₹ 40,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 25,00,000",
+    "interest": 12,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "IN A CAN",
+    "industry_name": "Food",
+    "description": "Can Cocktails",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Sid07 Designs",
+    "industry_name": "Manufacturing",
+    "description": "Inventions",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 75,
+    "debt_investment": "₹ 22,00,000",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Hair Originals",
+    "industry_name": "Lifestyle",
+    "description": "Natural Hair Extensions",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "KG Agrotech",
+    "industry_name": "Manufacturing",
+    "description": "Agricultural Innovations",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 40,
+    "debt_investment": "₹ 20,00,000",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Sunfox Technologies",
+    "industry_name": "Healthcare",
+    "description": "Portable ECG Device",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Isak Fragrances",
+    "industry_name": "Lifestyle",
+    "description": "Perfumes Fragrances",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 50,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Watt Technovations",
+    "industry_name": "Healthcare",
+    "description": "Ventilated PPE Kits",
+    "equity_investment": "₹ 25.25",
+    "equity_stake": 1,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Insurance Samadhan",
+    "industry_name": "Lifestyle",
+    "description": "Insurance Solutions",
+    "equity_investment": "₹ 1,00,00,000",
+    "equity_stake": 4,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Humpy A2",
+    "industry_name": "Food",
+    "description": "Organic Milk A2 Products",
+    "equity_investment": "₹ 33,33,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Gold Safe Solutions",
+    "industry_name": "Manufacturing",
+    "description": "Anti-Suicidal Fan Rod",
+    "equity_investment": "₹ 16,66,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Tweek Labs",
+    "industry_name": "Lifestyle",
+    "description": "Sportswear",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Proxgy",
+    "industry_name": "Technology",
+    "description": "VR",
+    "equity_investment": "₹ 50,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "Store My Goods",
+    "industry_name": "Lifestyle",
+    "description": "Storage solutions",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 2,
+    "debt_investment": "₹ 25,00,000",
+    "interest": 12,
+    "shark": "Peyush Bansal"
+  },
+  {
+    "startup_name": "BluePine Foods",
+    "industry_name": "Food",
+    "description": "Frozen Momos",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 5.33,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Booz Scooters",
+    "industry_name": "Automotive",
+    "description": "Renting e-bike for mobility in private spaces",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 25,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Heart up my Sleeves",
+    "industry_name": "Lifestyle",
+    "description": "Detachable Sleeves",
+    "equity_investment": "₹ 12,50,000",
+    "equity_stake": 15,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "NOCD",
+    "industry_name": "Food",
+    "description": "Energy Drink",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 15,
+    "debt_investment": "₹ 30,00,000",
+    "interest": 12,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Cos IQ",
+    "industry_name": "Lifestyle",
+    "description": "Intelligent Skincare",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 12.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Skippi Ice Pops",
+    "industry_name": "Food",
+    "description": "Ice-Pops",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Get-A-Whey",
+    "industry_name": "Food",
+    "description": "Sugar-Free Icecream",
+    "equity_investment": "₹ 33,33,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "The Quirky Naari",
+    "industry_name": "Lifestyle",
+    "description": "Customised Apparels",
+    "equity_investment": "₹ 17,50,000",
+    "equity_stake": 12,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Sunfox Technologies",
+    "industry_name": "Healthcare",
+    "description": "Portable ECG Device",
+    "equity_investment": "₹ 20,00,000",
+    "equity_stake": 1.2,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Humpy A2",
+    "industry_name": "Food",
+    "description": "Organic Milk A2 Products",
+    "equity_investment": "₹ 33,33,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Gold Safe Solutions",
+    "industry_name": "Manufacturing",
+    "description": "Anti-Suicidal Fan Rod",
+    "equity_investment": "₹ 16,66,000",
+    "equity_stake": 10,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Wakao Foods",
+    "industry_name": "Food",
+    "description": "Jackfruit Products",
+    "equity_investment": "₹ 25,00,000",
+    "equity_stake": 7,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Kabaddi Adda",
+    "industry_name": "Lifestyle",
+    "description": "All-Kabaddi App",
+    "equity_investment": "₹ 40,00,000",
+    "equity_stake": 3,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Nomad Food Project",
+    "industry_name": "Food",
+    "description": "Bacon Jams Relishes",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "Jain Shikanji",
+    "industry_name": "Food",
+    "description": "Lemonade",
+    "equity_investment": "₹ 10,00,000",
+    "equity_stake": 7.5,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  },
+  {
+    "startup_name": "SneaKare",
+    "industry_name": "Lifestyle",
+    "description": "Shoe Sneaker kits storage crates",
+    "equity_investment": "₹ 7,00,000",
+    "equity_stake": 4,
+    "debt_investment": "₹ 0",
+    "interest": 0,
+    "shark": "Vineeta Singh"
+  }
+]
