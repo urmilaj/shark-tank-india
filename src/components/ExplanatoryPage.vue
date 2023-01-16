@@ -98,7 +98,16 @@
                       <text dx="5" y="30" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.industry_percentage }}</text>
                       <text dx="5" y="42" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.investment_percentage }}</text>
                       <g :transform="`translate(${(data.x1-data.x0)/2},${10})`">
-                        <path v-for="(iconData,i) in getSharkStartupInvestment(treemapTooltipData.get(portfolio[0]), data.data.industry_name)" :key="i"  v-tippy="{content:getTooltipContent(iconData), theme:'custom'}" :transform="`translate(${iconScale(i%5*1.3)},${iconScale((Math.floor(i/5)*2.5)-0.5)})`" stroke="white" stroke-width="1.5" :fill="`${data.data.fill}`"  d="M15 8.96849C14.4585 8.96849 13.995 8.77599 13.6095 8.39099C13.224 8.00549 13.0312 7.53149 13.0312 6.96899C13.0312 6.42699 13.224 5.96349 13.6095 5.57849C13.995 5.19299 14.4585 5.00024 15 5.00024C15.5415 5.00024 16.005 5.19299 16.3905 5.57849C16.776 5.96349 16.9687 6.42699 16.9687 6.96899C16.9687 7.53149 16.776 8.00549 16.3905 8.39099C16.005 8.77599 15.5415 8.96849 15 8.96849ZM12.906 24.9997V18.75H11.6565V12.7185C11.6565 12.1355 11.8647 11.6407 12.2812 11.2342C12.6977 10.8282 13.1872 10.6252 13.7497 10.6252H16.2502C16.8127 10.6252 17.3022 10.8282 17.7187 11.2342C18.1352 11.6407 18.3435 12.1355 18.3435 12.7185V18.75H17.094V24.9997H12.906Z"></path>
+                        <path 
+                          v-for="(iconData,i) in getSharkStartupInvestment(treemapTooltipData.get(portfolio[0]), data.data.industry_name)" 
+                          :key="i"
+                          v-tippy="{content:getTooltipContent(iconData), theme:'custom'}"
+                          :transform="`translate(${iconScale(i%5*1.3)},${iconScale((Math.floor(i/5)*2.5)-0.5)})`"
+                          stroke="white"
+                          stroke-width="1.5"
+                          :fill="`${data.data.fill}`"
+                          d="M15 8.96849C14.4585 8.96849 13.995 8.77599 13.6095 8.39099C13.224 8.00549 13.0312 7.53149 13.0312 6.96899C13.0312 6.42699 13.224 5.96349 13.6095 5.57849C13.995 5.19299 14.4585 5.00024 15 5.00024C15.5415 5.00024 16.005 5.19299 16.3905 5.57849C16.776 5.96349 16.9687 6.42699 16.9687 6.96899C16.9687 7.53149 16.776 8.00549 16.3905 8.39099C16.005 8.77599 15.5415 8.96849 15 8.96849ZM12.906 24.9997V18.75H11.6565V12.7185C11.6565 12.1355 11.8647 11.6407 12.2812 11.2342C12.6977 10.8282 13.1872 10.6252 13.7497 10.6252H16.2502C16.8127 10.6252 17.3022 10.8282 17.7187 11.2342C18.1352 11.6407 18.3435 12.1355 18.3435 12.7185V18.75H17.094V24.9997H12.906Z">
+                        </path>
                       </g>
                     </g>
                   </g>
