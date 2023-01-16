@@ -1,11 +1,14 @@
 <script setup>
-  import { ref, computed, onMounted ,onUpdated, watchEffect, watch } from 'vue';
+  import { ref, onMounted } from 'vue';
   import * as d3 from 'd3';
+
   import treemapData from '../assets/data/treemap.json';
   import treemapTooltip from '../assets/data/treemapTooltip.json';
 
   const shark = d3.group(treemapData, d=>d.shark);
-  const treemapTooltipData = d3.group(treemapTooltip, d=>d.shark)
+  const treemapTooltipData = d3.group(treemapTooltip, d=>d.shark);
+
+  const iconScale = d3.scaleLinear().domain([0,10]).range([0,100]);
 
   const getJudgeImage = (name) => {
     const removeSpaceInSharkName = name.replace(/\s/g, '');
@@ -31,7 +34,7 @@
       width = value?.width  === undefined ? 0 : Math.floor(value.width - 8);
       height = value?.height === undefined ? 0 : Math.floor(value.height - 8);
 
-      const treemapLayoutType =  sharkData[0].shark === 'Vineeta Singh' && width <= 500 ? d3.treemapSlice : d3.treemapBinary;
+      const treemapLayoutType =  sharkData[0].shark === 'Vineeta Singh' && width <= 300 ? d3.treemapSlice : d3.treemapBinary;
 
       const treemapSharkData = d3.group(sharkData, d=>d.shark);
   
@@ -47,6 +50,18 @@
       return rootNode.descendants().slice(2);
   };   
 
+  const getTooltipContent = (content) => {
+    const tooltip = `
+    <h1 style='font-size:1.2rem; font-weight:500; padding-bottom:1px'>${content.startup_name}</h1>
+    <h2 style='font-weight:300; padding-bottom:10px'>${content.description}</h2>
+    <hr style='border:black solid 0.1px'>
+    <p style='font-weight:400; padding-bottom:3px; padding-top:10px'>Equity Investment - ${content.equity_investment}</p>
+    <p style='font-weight:400; padding-bottom:5px;'>Equity Stake - ${content.equity_stake}%</p>
+    <p style='font-weight:400; padding-bottom:5px;'>Debt Investment - ${content.debt_investment}</p>
+    <p style='font-weight:400; padding-bottom:5px;'>Debt Stake - ${content.interest}%</p>
+    `
+    return tooltip;
+  };
 </script>
 
 <template>
@@ -74,16 +89,16 @@
             </div>
             <div class="border border-b border-gray-200 rounded p-2 my-4">
               <p class="mx-2 text-center">Industry Investment Mix</p>
-              <div class="mt-2 h-[50vh]">
+              <div class="mt-2 h-[50vh]" >
                 <svg class="border border-black svg" width="100%" height="100%">
                   <g transform="translate(3,3)">
                     <g v-for="(data,i) in drawTreeMap(portfolio[1], svgDimensions)" :key="i" :transform="`translate(${data.x0},${data.y0})`">
                       <rect :width="`${data.x1-data.x0}`" :height="`${data.y1 - data.y0}`" :fill="`${data.data.fill}`" stroke="white" opacity="0.3"></rect>
-                      <text dx="5" y="18" class="text-[0.7rem] md:text-[0.9rem]">{{ data.data.industry_name }}</text>
+                      <text dx="5" y="18" class="text-[0.7rem] md:text-[0.9rem]" >{{ data.data.industry_name }}</text>
                       <text dx="5" y="30" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.industry_percentage }}</text>
                       <text dx="5" y="42" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.investment_percentage }}</text>
-                      <g :transform="`translate(${(data.x1-data.x0)/2},${(data.y0)/2})`">
-                        <path v-for="(s,index) in getSharkStartupInvestment(treemapTooltipData.get(portfolio[0]), data.data.industry_name)" :key="index" :transform="`translate(${index*10})`" stroke="white" :fill="`${data.data.fill}`" d="M20 11.958q-1.083 0-1.854-.77-.771-.771-.771-1.896 0-1.084.771-1.854.771-.771 1.854-.771 1.083 0 1.854.771.771.77.771 1.854 0 1.125-.771 1.896-.771.77-1.854.77Zm-2.792 21.375V25h-1.666v-8.042q0-1.166.833-1.979.833-.812 1.958-.812h3.334q1.125 0 1.958.812.833.813.833 1.979V25h-1.666v8.333Z"></path>
+                      <g :transform="`translate(${(data.x1-data.x0)/2},${10})`">
+                        <path v-for="(iconData,i) in getSharkStartupInvestment(treemapTooltipData.get(portfolio[0]), data.data.industry_name)" :key="i"  v-tippy="{content:getTooltipContent(iconData), theme:'custom'}" :transform="`translate(${iconScale(i%5*1.3)},${iconScale((Math.floor(i/5)*2.5)-0.5)})`" stroke="white" stroke-width="1.5" :fill="`${data.data.fill}`"  d="M15 8.96849C14.4585 8.96849 13.995 8.77599 13.6095 8.39099C13.224 8.00549 13.0312 7.53149 13.0312 6.96899C13.0312 6.42699 13.224 5.96349 13.6095 5.57849C13.995 5.19299 14.4585 5.00024 15 5.00024C15.5415 5.00024 16.005 5.19299 16.3905 5.57849C16.776 5.96349 16.9687 6.42699 16.9687 6.96899C16.9687 7.53149 16.776 8.00549 16.3905 8.39099C16.005 8.77599 15.5415 8.96849 15 8.96849ZM12.906 24.9997V18.75H11.6565V12.7185C11.6565 12.1355 11.8647 11.6407 12.2812 11.2342C12.6977 10.8282 13.1872 10.6252 13.7497 10.6252H16.2502C16.8127 10.6252 17.3022 10.8282 17.7187 11.2342C18.1352 11.6407 18.3435 12.1355 18.3435 12.7185V18.75H17.094V24.9997H12.906Z"></path>
                       </g>
                     </g>
                   </g>

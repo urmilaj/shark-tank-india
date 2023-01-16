@@ -10,3 +10,29 @@
         font-family: 'Oswald';
     }
 }
+
+.tippy-box[data-theme~='custom'] {
+    background-color: white;
+    border: black 1px solid;
+    color: black;
+    padding: 0.5rem;
+    font-family: 'Oswald';
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: white;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: white;
+}
+  
+.tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: white; 
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: white;
+}
+
+
