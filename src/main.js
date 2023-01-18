@@ -15,7 +15,8 @@ app.use(VueTippy, {
         defaultProps: {
         allowHTML: true,
         theme: 'custom',
-        touch: true
+        touch: true,
+        trigger: 'mouseenter click'
     }
 });
     

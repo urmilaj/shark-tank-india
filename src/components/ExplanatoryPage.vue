@@ -71,15 +71,28 @@
     } else {
       return screenWidthSize?.width <= 300 ? smallIcon : bigIcon;
     }
-  }
+  };
 
   const iconSpacing = (screenWidthSize, i) => {
     if (screenWidthSize?.width === undefined) {
       return "";
     } else {
-      return screenWidthSize?.width <= 300 ? `translate(${iconScale(i%5*1)},${iconScale((Math.floor(i/5)*2.5)-0.5)})` : `translate(${iconScale(i%5*1.5)},${iconScale((Math.floor(i/5)*3.5)-0.5)})`;
+      return screenWidthSize?.width <= 300 ? 
+      `translate(${iconScale(i%4*1)},${iconScale((Math.floor(i/4)*2.5)-0.5)})` : 
+      `translate(${iconScale(i%4*1.5)},${iconScale((Math.floor(i/4)*3.5)-0.5)})`;
     }
-  }
+  };
+
+  const iconGroupPosition = (widthMin, widthMax, heightMin, heightMax) => {
+    const totalWidth = widthMax - widthMin;
+    const totalHeight = heightMax - heightMin;
+    if (totalWidth > totalHeight) {
+      return `translate(${(widthMax-widthMin)/2},5)`;
+    } 
+    if (totalHeight > totalWidth) {
+      return `translate(5,${(heightMax-heightMin)/2})`;
+    }
+  };
 </script>
 
 <template>
@@ -91,8 +104,8 @@
       Voluptate repudiandae et natus eligendi nemo officiis, minima assumenda. Excepturi repellendus odio unde voluptate debitis expedita eos atque vitae quo! Ex repellendus temporibus provident eligendi blanditiis sint tempora, quibusdam iusto?</p>
     </div>
     <div class="grid grid-cols-12 lg:p-2">
-        <div v-for="(portfolio,i) in shark" :key="i" class="relative col-span-12 lg:col-span-6 xl:col-span-4 border-2  border-gray-200 rounded-lg mx-1 md:mx-14 lg:mx-1 my-10">
-          <img class="absolute p-1 bg-white inset-x-0.5 -top-14 mx-auto w-28 rounded-full border-2 border-gray-200" :src="getJudgeImage(portfolio[0])">
+        <div v-for="(portfolio,i) in shark" :key="i" class="relative col-span-12 lg:col-span-6 xl:col-span-4 border-2  border-gray-300 rounded-lg mx-1 md:mx-14 lg:mx-8 my-10">
+          <img class="absolute p-1 bg-white inset-x-0.5 -top-14 mx-auto w-28 rounded-full border-2 border-gray-300" :src="getJudgeImage(portfolio[0])">
           <p class="mx-auto mt-20 mb-4 text-xl text-center font-semibold">{{ portfolio[0] }}</p>
           <div class="mx-4">
             <div class="grid grid-cols-12 border border-b border-gray-200 rounded p-2 my-4 items-center">
@@ -115,10 +128,11 @@
                       <text dx="5" y="18" class="text-[0.7rem] md:text-[0.9rem]" >{{ data.data.industry_name }}</text>
                       <text dx="5" y="30" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.industry_percentage }}</text>
                       <text dx="5" y="42" class="text-[0.7rem] md:text-[0.8rem]">{{ data.data.investment_percentage }}</text>
-                      <g :transform="`translate(${(data.x1-data.x0)/2},${10})`">
+                      <g :transform="iconGroupPosition(data.x0, data.x1, data.y0, data.y1)">
                         <path 
                           v-for="(iconData,i) in getSharkStartupInvestment(treemapTooltipData.get(portfolio[0]), data.data.industry_name)" 
                           :key="i"
+                          class="hover:cursor-pointer"
                           v-tippy="{content:getTooltipContent(iconData), theme:'custom'}"
                           :transform="iconSpacing(svgDimensions, i)"
                           stroke="white"
