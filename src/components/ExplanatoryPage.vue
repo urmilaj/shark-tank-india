@@ -51,14 +51,15 @@
   };   
 
   const getTooltipContent = (content) => {
+    const debtStake = content.interest === '-' ? 'unknown' : content.interest+'%'
     const tooltip = `
     <h1 style='font-size:1.2rem; font-weight:500; padding-bottom:1px'>${content.startup_name}</h1>
     <h2 style='font-weight:300; padding-bottom:10px'>${content.description}</h2>
     <hr style='border:black solid 0.1px'>
-    <p style='font-weight:400; padding-bottom:3px; padding-top:10px'>Equity Investment - ${content.equity_investment}</p>
-    <p style='font-weight:400; padding-bottom:5px;'>Equity Stake - ${content.equity_stake}%</p>
-    <p style='font-weight:400; padding-bottom:5px;'>Debt Investment - ${content.debt_investment}</p>
-    <p style='font-weight:400; padding-bottom:5px;'>Debt Stake - ${content.interest}%</p>
+    <p style='font-weight:400; padding-bottom:3px; padding-top:10px'>Equity Investment : ${content.equity_investment}</p>
+    <p style='font-weight:400; padding-bottom:5px;'>Equity Stake : ${content.equity_stake}%</p>
+    <p style='font-weight:400; padding-bottom:5px;'>Debt Investment : ${content.debt_investment}</p>
+    <p style='font-weight:400; padding-bottom:5px;'>Debt Stake : ${debtStake}</p>
     `
     return tooltip;
   };
@@ -97,11 +98,17 @@
 
 <template>
   <div class="pt-10">
-    <div class="mx-4 mb-10 p-2">
+    <div class="md:mx-10 lg:mx-8 mb-10 p-2">
       <p class="text-3xl text-center mb-8">Explanatory Visualization</p>
-      <p class="border-2 border-gray-200 font-light text-xl p-10 rounded-lg text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perferendis sunt reprehenderit at facere eum? Repellendus, optio aliquid molestias harum eaque recusandae suscipit perferendis incidunt ut distinctio vero tenetur deserunt!
-      Molestias odio deleniti possimus nostrum voluptas saepe maxime quia quam corporis sunt sapiente, dolorem at assumenda, molestiae ut illum, nesciunt a rem repellendus sed numquam inventore aperiam culpa? Nihil, nobis?
-      Voluptate repudiandae et natus eligendi nemo officiis, minima assumenda. Excepturi repellendus odio unde voluptate debitis expedita eos atque vitae quo! Ex repellendus temporibus provident eligendi blanditiis sint tempora, quibusdam iusto?</p>
+      <p class="border-2 border-gray-300 font-light text-xl p-6 rounded-lg text-justify">
+        The information below is each shark's total money (in rupee) invested, i.e both equity and debt; 
+        The number of deals made by each shark in season one and their <b> individual industry portfolio mix visualized as a treemap chart.</b>
+        The size of each section of the treemap chart indicates the industry in which significant investment has been made.
+        Annotations have been added to each section of the treemap, showing the industry name, the percentage of total investment and the investment in rupee.
+        Additionally tiny icons have been added to denote each startup that received an investment. 
+        <b> Hover over the icons </b> to see information of the startup and details of the deal.
+        
+      </p>
     </div>
     <div class="grid grid-cols-12 lg:p-2">
         <div v-for="(portfolio,i) in shark" :key="i" class="relative col-span-12 lg:col-span-6 xl:col-span-4 border-2  border-gray-300 rounded-lg mx-1 md:mx-14 lg:mx-8 my-10">
