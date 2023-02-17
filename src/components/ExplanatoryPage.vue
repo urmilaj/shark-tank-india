@@ -127,7 +127,7 @@
             </div>
             <div class="border border-b border-gray-200 rounded p-2 my-4">
               <p class="mx-2 text-center">Industry Investment Mix</p>
-              <div class="mt-2 h-[50vh]" >
+              <div class="mt-2 h-[50vh]">
                 <svg class="border border-black svg" width="100%" height="100%">
                   <g transform="translate(3,3)">
                     <g v-for="(data,i) in drawTreeMap(portfolio[1], svgDimensions)" :key="i" :transform="`translate(${data.x0},${data.y0})`">

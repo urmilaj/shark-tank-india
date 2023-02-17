@@ -19,6 +19,7 @@ import ExploratoryPage from './components/ExploratoryPage.vue';
     <div id="Explanatory">
       <ExplanatoryPage></ExplanatoryPage>
     </div>
+    <hr class="w-[80vw] m-auto">
     <div id="Exploratory">
       <ExploratoryPage></ExploratoryPage>
     </div>
