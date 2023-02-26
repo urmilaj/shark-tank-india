@@ -2,22 +2,20 @@
 import * as d3 from 'd3';
 import {ref, computed, onMounted} from 'vue';
 import sharksDataset from '../assets/data/sharksDataset.csv';
-import sharkInvestmentLinks from '../assets/data/sharkInvestmentLinks.csv';
 const filterSharksDataset = sharksDataset.filter(d => d.shark != "");
 const sharkGroup = d3.group(filterSharksDataset, d => d.shark);
-const industryGroup = d3.group(sharksDataset, d => d.Industry, d => d["Startup Name"]);
-
+const industryGroup = d3.group(sharksDataset, d => d.Industry, d => d.startup);
 let svgContainer = ref(null);
 let svgContainerHeight = ref(null);
 let svgContainerWidth = ref(null);
 let dimensions;
-const sharks = ref();
-const startups = ref();
+const sharks = ref(null);
+const startups = ref(null);
+const parent = ref(null);
 const margin = {top:50, left:20, bottom:120, right:20};
 
 const getJudgeImage = (name) => {
     const removeSpaceInSharkName = name.replace(/\s/g, '');
-    
     return new URL(`../assets/images/judges/${removeSpaceInSharkName}.png`, import.meta.url).href;
 };
 
@@ -28,7 +26,6 @@ const simulation = (dataset) => {
   }
   return forces;
 }
-
 const sharkGroupScale = d3.scaleBand().domain(sharkGroup.keys());
 const industryGroupXScale = d3.scaleBand().domain(industryGroup.keys());
 const industryGroupYScale = d3.scaleOrdinal().domain(industryGroup.keys());
@@ -40,31 +37,24 @@ const links = d3.linkVertical()
   .target(d => [d.targetX, d.targetY]);
 
 const sharkStartupLinkData = (linksPosition, sharkPosition, startupPosition) => {
-  linksPosition.forEach(d => {
-    sharkPosition.forEach(v => {
-    let parentX = +v.parentElement.attributes.transform.value.split(",")[0].replace(/\D/g,'');
-    let parentY = +v.parentElement.attributes.transform.value.split(",")[1].replace(/\D/g,'');
-    let cx = +v.attributes.cx.nodeValue;
-    let cy = +v.attributes.cy.nodeValue;
-    if(d.shark === v.__data__[0]) {
-      d["sourceX"] = (parentX)+(cx);
-      d["sourceY"] = (parentY)+(cy)-25;
-    }
-    });
-    startupPosition.forEach(s => {
-      let targetParentX = +s.parentElement?.attributes.transform.value.split(",")[0].replace(/^\D+/g, '');
-      let targetParentY = +s.parentElement?.attributes.transform.value.split(",")[1].replace(/\D/g,'');
-      let targetX = s.__data__.x //+s.attributes.transform.value.split(",")[0].replace(/^\D+/g, '');
-      let targetY = s.__data__.y //+s.attributes?.transform.value.split(",")[1].replace(/^\D+/g, '');
-      if(d.startup_name === s.__data__[0]) {
-        d["targetX"] = targetParentX+targetX+20;
-        d["targetY"] = targetParentY+targetY+33;
+  const regex = /-?\d+(\.\d+)?/g;
+  linksPosition.forEach((d,i) => {
+    startupPosition.forEach(startup => {
+      const sourceX = +(startup.attributes.transform.value.split(",")[0].match(regex)[0]);
+      const sourceY = +(startup.attributes.transform.value.split(",")[1].match(regex)[0]);
+      if (d.startup === startup.attributes.class.value) {
+        d["sourceX"] = industryGroupXScale(d.Industry)+(industryGroupCxScale(d.Industry))+(sourceX);
+        d["sourceY"] = industryGroupYScale(d.Industry)+(industryGroupCyScale(d.Industry))+sourceY;
       }
-      })
+    });
+    sharkPosition.forEach(shark => {
+      if (d.shark === shark.attributes.class.value) {
+        d["targetX"] = sharkGroupScale(shark.attributes.class.value);
+        d["targetY"] = svgContainerWidth.value < 600 ? (svgContainerHeight.value-margin.bottom-25) : (svgContainerHeight.value-margin.bottom-40);
+      }
+    })
   });
 }; 
-
-//sharkStartupLinkData(sharkInvestmentLinks, sharks, startups)
 
 function getScaleValues(value) {
   if (value.width < 600) {
@@ -83,6 +73,9 @@ function getScaleValues(value) {
   }
 }
 
+const test =(value) => {
+  console.log(value)
+}
 function getDimensionValues(value) {
   if (value < 600) {
     return value - 0
@@ -95,17 +88,19 @@ onMounted(() => {
   svgContainer.value = dimensions;
   svgContainerWidth.value = dimensions.width;
   svgContainerHeight.value = dimensions.height;
-  //sharkStartupLinkData(sharkInvestmentLinks, sharks.value, startups.value);
-  getScaleValues(dimensions)
+  getScaleValues(dimensions);
+  sharkStartupLinkData(filterSharksDataset, sharks.value, startups.value);
   window.addEventListener('resize',(event)=>{
     dimensions = document.getElementById("exploratoryViz").getBoundingClientRect();
     svgContainer.value = dimensions;
     svgContainerHeight.value = dimensions.height;
     svgContainerWidth.value = dimensions.width;
-    getScaleValues(dimensions)
-    //sharkStartupLinkData(sharkInvestmentLinks, sharks.value, startups.value);
+    getScaleValues(dimensions);
+    sharkStartupLinkData(filterSharksDataset, sharks.value, startups.value)
   })
 });
+
+
 </script>
 
 <template>
@@ -127,20 +122,29 @@ onMounted(() => {
                 <circle v-for="(shark,index) in sharkGroup" :key="index" :cx="sharkGroupScale(shark[0])" cy="0" :r="svgContainerWidth < 600 ? 20 : 35" :class="shark[0]"/>
               </clipPath>
             </defs>
-            <image v-for="(shark, i) in sharkGroup" :key="i" :href="getJudgeImage(shark[0])" :width="svgContainerWidth < 600 ? '60px' : '85px'" :x="svgContainerWidth < 600 ? sharkGroupScale(shark[0])-28 : sharkGroupScale(shark[0])-42" :y="svgContainerWidth < 600 ? -28 : -45" clip-path="url(#sharkImage)"></image>
+            <image
+              v-for="(shark, i) in sharkGroup" 
+              :key="i" :href="getJudgeImage(shark[0])"
+              :width="svgContainerWidth < 600 ? '60px' : '85px'"
+              :x="svgContainerWidth < 600 ? sharkGroupScale(shark[0])-28 : sharkGroupScale(shark[0])-42"
+              :y="svgContainerWidth < 600 ? -28 : -45"
+              clip-path="url(#sharkImage)"
+            >
+            </image>
             <circle
             v-for="(outerCircle,o) in sharkGroup"
             :key="o"
-            :ref="sharks"
+            ref="sharks"
+            :class="outerCircle[0]"
             :cx="sharkGroupScale(outerCircle[0])"
             cy="0"
             :r="svgContainerWidth < 600 ? 25 : 40"
             fill="none"
             stroke="#d1d5db"
-            stroke-width="2">
-            </circle>
+            stroke-width="2"
+            />
           </g>
-          <g v-for="(industry, i) in industryGroup" :key="i" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
+          <g v-for="(industry, i) in industryGroup" :key="i" ref="parent" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
             <circle :cx="industryGroupCxScale(industry[0])" :cy="industryGroupCyScale(industry[0])" :r="industryGroupCrScale(industry[0])" fill="white" stroke="#F9E272" stroke-width="2"/>
             <path
             class="industryPath"
@@ -154,8 +158,9 @@ onMounted(() => {
             <g :transform="`translate(${industryGroupCxScale(industry[0])-20},${industryGroupCyScale(industry[0])-20})`">
               <path 
                 v-for="(force, f) in simulation(industry[1]).nodes()"
-                :key="f" class="startUpPath"
-                :ref="startups"
+                :key="f"
+                :class="force[0]"
+                ref="startups"
                 :transform="`translate(${force.x},${force.y})`"
                 d="M20 11.958q-1.083 0-1.854-.77-.771-.771-.771-1.896 0-1.084.771-1.854.771-.771 1.854-.771 1.083 0 1.854.771.771.77.771 1.854 0 1.125-.771 1.896-.771.77-1.854.77Zm-2.792 21.375V25h-1.666v-8.042q0-1.166.833-1.979.833-.812 1.958-.812h3.334q1.125 0 1.958.812.833.813.833 1.979V25h-1.666v8.333Z"
                 :fill="`${force[1][0].shark === '' ? 'gray':'white'}`"
@@ -165,13 +170,7 @@ onMounted(() => {
             </g>
           </g>
           <g>
-            <path
-            v-for="(links, l) in sharkInvestmentLinks"
-            :key="l"
-            fill="none"
-            stroke="#AB59A0"
-            stroke-width="0.1"
-            />
+            <path v-for="(link, l) in filterSharksDataset" :key="l" fill="none" stroke="#AB59A0" stroke-width="0.1" :d="links(link)"/>
           </g>
         </g>
       </svg>
