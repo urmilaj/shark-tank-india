@@ -11,7 +11,7 @@ let svgContainerWidth = ref(null);
 let dimensions;
 const sharks = ref(null);
 const startups = ref(null);
-const parent = ref(null);
+const pathLinks = ref(null);
 const margin = {top:50, left:20, bottom:120, right:20};
 
 const getJudgeImage = (name) => {
@@ -64,15 +64,15 @@ const sharkStartupLinkData = (linksPosition, sharkPosition, startupPosition) => 
 function getScaleValues(value) {
   if (value.width < 600) {
     sharkGroupScale.range([margin.left, value.width-margin.right]);
-    industryGroupXScale.range([margin.left+50, value.width-80]);
-    industryGroupYScale.range([80, 350, 220, 350, 100, 200, 50]);
+    industryGroupXScale.range([margin.left+50, value.width+30]);
+    industryGroupYScale.range([80, 480, 220, 350, 70, 200, 50]);
     industryGroupCxScale.range([20, -80, 10, 50, 10, 50, 25]);
     industryGroupCyScale.range([18, -50, 50, 80, 30, 50, 30]);
   }
    else {
     sharkGroupScale.range([margin.left+80, value.width]);
     industryGroupXScale.range([margin.left+80, value.width]);
-    industryGroupYScale.range([50, 180, 50, 200, 150, 80, 20]);
+    industryGroupYScale.range([100, 180, 120, 100, 150, 80, 80]);
     industryGroupCxScale.range([0, 25, 20, 0, -50, 0, -20]);
     industryGroupCyScale.range([50, 20, 10, 180, 100, 100, 23]);
   };
@@ -85,6 +85,12 @@ function getDimensionValues(value) {
     return value - 15
   };
 };
+
+const showSharkInvestments = (value) => {
+  console.log(value[1])
+  // console.log(pathLinks.value)
+  
+}
 
 onMounted(() => {
   dimensions = document.getElementById("exploratoryViz").getBoundingClientRect();
@@ -130,6 +136,8 @@ onMounted(() => {
               :x="svgContainerWidth < 600 ? sharkGroupScale(shark[0])-28 : sharkGroupScale(shark[0])-42"
               :y="svgContainerWidth < 600 ? -28 : -45"
               clip-path="url(#sharkImage)"
+              class="cursor-pointer"
+              @click="$event => showSharkInvestments(shark)"
             >
             </image>
             <circle
@@ -145,7 +153,7 @@ onMounted(() => {
               stroke-width="2"
             />
           </g>
-          <g v-for="(industry, i) in industryGroup" :key="i" ref="parent" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
+          <g v-for="(industry, i) in industryGroup" :key="i" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
             <circle :cx="industryGroupCxScale(industry[0])" :cy="industryGroupCyScale(industry[0])" :r="industryGroupCrScale(industry[0])" fill="white" stroke="#F9E272" stroke-width="2"/>
             <path
             class="industryPath"
@@ -171,7 +179,7 @@ onMounted(() => {
             </g>
           </g>
           <g>
-            <path v-for="(link, l) in filterSharksDataset" :key="l" fill="none" stroke="#AB59A0" stroke-width="0.1" :d="links(link)"/>
+            <path v-for="(link, l) in filterSharksDataset" :key="l" ref="pathLinks" fill="none" stroke="#AB59A0" stroke-width="0.1" :d="links(link)"/>
           </g>
         </g>
       </svg>
