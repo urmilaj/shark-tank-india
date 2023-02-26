@@ -75,16 +75,17 @@ function getScaleValues(value) {
     industryGroupYScale.range([50, 180, 50, 200, 150, 80, 20]);
     industryGroupCxScale.range([0, 25, 20, 0, -50, 0, -20]);
     industryGroupCyScale.range([50, 20, 10, 180, 100, 100, 23]);
-  }
-}
+  };
+};
 
 function getDimensionValues(value) {
   if (value < 600) {
     return value - 0
   } else {
     return value - 15
-  }
-}
+  };
+};
+
 onMounted(() => {
   dimensions = document.getElementById("exploratoryViz").getBoundingClientRect();
   svgContainer.value = dimensions;
@@ -98,11 +99,9 @@ onMounted(() => {
     svgContainerHeight.value = dimensions.height;
     svgContainerWidth.value = dimensions.width;
     getScaleValues(dimensions);
-    sharkStartupLinkData(filterSharksDataset, sharks.value, startups.value)
-  })
+    sharkStartupLinkData(filterSharksDataset, sharks.value, startups.value);
+  });
 });
-
-
 </script>
 
 <template>
