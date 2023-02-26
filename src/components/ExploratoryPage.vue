@@ -25,16 +25,21 @@ const simulation = (dataset) => {
     forces.tick();
   }
   return forces;
-}
+};
+
 const sharkGroupScale = d3.scaleBand().domain(sharkGroup.keys());
 const industryGroupXScale = d3.scaleBand().domain(industryGroup.keys());
-const industryGroupYScale = d3.scaleOrdinal().domain(industryGroup.keys());
+const industryGroupYScale = d3.scaleOrdinal().domain([...industryGroup.keys()]);
 const industryGroupCrScale = d3.scaleOrdinal().domain(industryGroup.keys()).range([88, 40, 83, 50, 48, 70, 58]);
-const industryGroupCxScale = d3.scaleOrdinal().domain(industryGroup.keys());
-const industryGroupCyScale = d3.scaleOrdinal().domain(industryGroup.keys());
-const links = d3.linkVertical()
-  .source(d => [d.sourceX, d.sourceY])
-  .target(d => [d.targetX, d.targetY]);
+const industryGroupCxScale = d3.scaleBand().domain(industryGroup.keys());
+const industryGroupCyScale = d3.scaleOrdinal().domain([...industryGroup.keys()]);
+const links = (linkData) => {
+  const createVerticalLinks = d3.linkVertical()
+   .source(d => [d.sourceX, d.sourceY])
+   .target(d => [d.targetX, d.targetY]);
+
+  return createVerticalLinks(linkData);
+};
 
 const sharkStartupLinkData = (linksPosition, sharkPosition, startupPosition) => {
   const regex = /-?\d+(\.\d+)?/g;
@@ -73,9 +78,6 @@ function getScaleValues(value) {
   }
 }
 
-const test =(value) => {
-  console.log(value)
-}
 function getDimensionValues(value) {
   if (value < 600) {
     return value - 0
@@ -132,16 +134,16 @@ onMounted(() => {
             >
             </image>
             <circle
-            v-for="(outerCircle,o) in sharkGroup"
-            :key="o"
-            ref="sharks"
-            :class="outerCircle[0]"
-            :cx="sharkGroupScale(outerCircle[0])"
-            cy="0"
-            :r="svgContainerWidth < 600 ? 25 : 40"
-            fill="none"
-            stroke="#d1d5db"
-            stroke-width="2"
+              v-for="(outerCircle,o) in sharkGroup"
+              :key="o"
+              ref="sharks"
+              :class="outerCircle[0]"
+              :cx="sharkGroupScale(outerCircle[0])"
+              cy="0"
+              :r="svgContainerWidth < 600 ? 25 : 40"
+              fill="none"
+              stroke="#d1d5db"
+              stroke-width="2"
             />
           </g>
           <g v-for="(industry, i) in industryGroup" :key="i" ref="parent" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
