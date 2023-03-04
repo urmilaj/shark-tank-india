@@ -12,6 +12,7 @@ let dimensions;
 const sharks = ref(null);
 const startups = ref(null);
 const pathLinks = ref(null);
+const industry = ref(null);
 const margin = {top:50, left:20, bottom:120, right:20};
 
 const getJudgeImage = (name) => {
@@ -87,9 +88,82 @@ function getDimensionValues(value) {
 };
 
 const showSharkInvestments = (value) => {
-  console.log(value[1])
-  // console.log(pathLinks.value)
-  
+  const tooltip = `
+  <h1 style='font-size:1.2rem; font-weight:500; padding-bottom:5px;'>${value[0]}</h1>
+  <hr style='border:black solid 0.1px;'>
+  <p style='font-weight:400; padding-top:5px;'>${value[0].split(" ")[0]} invested in ${value[1].length} startups.</p>
+  `
+  return tooltip
+}
+
+const showStartupInvestments = (value) => {
+  let names = []
+  value[1].forEach(d => {
+    if (d.shark) {
+      names.push(d.shark)
+    }
+  })
+  const tooltip = `
+  <h1 style='font-size:1.2rem; font-weight:400; padding-bottom:1px'>${value[0]}</h1>
+  <hr style='border:black solid 0.1px'>
+  `
+  return tooltip
+}
+
+const showIndustryInvestment = (value) => {
+  console.log(value[1].keys())
+  const tooltip = `
+  <h1 style='font-size:1.2rem; font-weight:400; padding-bottom:1px'>${value[0]}</h1>
+  <hr style='border:black solid 0.1px'>
+  `
+  return tooltip
+}
+
+const activateLinkPaths = (sharkData) => {
+  const sharkName = sharkData[0].replace(/ /g,'')
+  const sharkDataValues = sharkData[1];
+  sharkDataValues.forEach((shark) => {
+    pathLinks.value.forEach((link) => {
+      if(link.attributes.class.value === `${shark.startup.replace(/ /g,'')}_${sharkName}`) {
+        link.style.strokeWidth = 1.5
+        
+      }
+    })
+    startups.value.forEach((startup, index) => {
+      if(startup.attributes.class.value === shark.startup) {
+        startup.style.fill = '#AB59A0'
+        startup.style.stroke = '#AB59A0'
+      }
+    })
+    industry.value.forEach((industryName) => {
+      if (industryName.attributes.class.value === shark.Industry) {
+        industryName._tippy.setContent(`
+        ${shark.Industry}
+        `)
+        industryName._tippy.show()
+      }
+    })
+  })
+}
+
+const deactivateLinkPaths = (sharkData) => {
+  const sharkDataValues = sharkData[1];
+  pathLinks.value.forEach((link) => {
+    link.style.strokeWidth = 0.1
+  })
+  sharkDataValues.forEach((shark) => {
+    startups.value.forEach((startup) => {
+      if(startup.attributes.class.value === shark.startup) {
+        startup.style.fill = 'white'
+        startup.style.stroke = 'gray'
+      }
+    })
+    industry.value.forEach((industryName) => {
+      if (industryName.attributes.class.value === shark.Industry) {
+        industryName._tippy.hide()
+      }
+    })
+  })
 }
 
 onMounted(() => {
@@ -107,6 +181,7 @@ onMounted(() => {
     getScaleValues(dimensions);
     sharkStartupLinkData(filterSharksDataset, sharks.value, startups.value);
   });
+  console.log(industry.value)
 });
 </script>
 
@@ -136,8 +211,10 @@ onMounted(() => {
               :x="svgContainerWidth < 600 ? sharkGroupScale(shark[0])-28 : sharkGroupScale(shark[0])-42"
               :y="svgContainerWidth < 600 ? -28 : -45"
               clip-path="url(#sharkImage)"
-              class="cursor-pointer"
-              @click="$event => showSharkInvestments(shark)"
+              class="hover:cursor-pointer"
+              v-tippy="{content:showSharkInvestments(shark), theme:'custom'}"
+              @mouseover="($event) => activateLinkPaths(shark)"
+              @mouseleave="($event) => deactivateLinkPaths(shark)"
             >
             </image>
             <circle
@@ -154,7 +231,17 @@ onMounted(() => {
             />
           </g>
           <g v-for="(industry, i) in industryGroup" :key="i" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
-            <circle :cx="industryGroupCxScale(industry[0])" :cy="industryGroupCyScale(industry[0])" :r="industryGroupCrScale(industry[0])" fill="white" stroke="#F9E272" stroke-width="2"/>
+            <circle
+              ref="industry"
+              :cx="industryGroupCxScale(industry[0])"
+              :cy="industryGroupCyScale(industry[0])"
+              :r="industryGroupCrScale(industry[0])"
+              fill="white"
+              stroke="#F9E272"
+              stroke-width="2"
+              :class="industry[0]"
+              v-tippy="{theme:'custom', trigger:'manual', placement:'bottom'}"
+            />
             <path
             class="industryPath"
             :id="`industryPath_${i}`"
@@ -164,7 +251,7 @@ onMounted(() => {
             <text class="industryPathText" dy="-5">
               <textPath startOffset="49%" text-anchor="middle" :href="`#industryPath_${i}`">{{ industry[0] }}</textPath>
             </text>
-            <g :transform="`translate(${industryGroupCxScale(industry[0])-20},${industryGroupCyScale(industry[0])-20})`">
+            <g class="pathLinksGroup" :transform="`translate(${industryGroupCxScale(industry[0])-20},${industryGroupCyScale(industry[0])-20})`">
               <path 
                 v-for="(force, f) in simulation(industry[1]).nodes()"
                 :key="f"
@@ -175,11 +262,12 @@ onMounted(() => {
                 :fill="`${force[1][0].shark === '' ? 'gray':'white'}`"
                 :opacity="`${force[1][0].shark === '' ? 0.3 : 1}`"
                 stroke="gray"
+                v-tippy="{content: showStartupInvestments(force), theme:'custom'}"
               />
             </g>
           </g>
           <g>
-            <path v-for="(link, l) in filterSharksDataset" :key="l" ref="pathLinks" fill="none" stroke="#AB59A0" stroke-width="0.1" :d="links(link)"/>
+            <path v-for="(link, l) in filterSharksDataset" :key="l" ref="pathLinks" :class="`${link.startup.replace(/ /g,'')}`+'_'+`${link.shark.replace(/ /g,'')}`" fill="none" stroke="#AB59A0" stroke-width="0.1" :d="links(link)"/>
           </g>
         </g>
       </svg>
@@ -187,3 +275,9 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.pathLinksGroup path:hover {
+  cursor: pointer;
+}
+</style>
