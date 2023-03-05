@@ -1,10 +1,13 @@
 <script setup>
 import * as d3 from 'd3';
-import {ref, computed, onMounted} from 'vue';
+import {ref, onMounted} from 'vue';
 import sharksDataset from '../assets/data/sharksDataset.csv';
+import sharkAnnotation from '../assets/data/annotation.json';
+import treemapAnnotation from '../assets/data/treemapTooltip.json';
 const filterSharksDataset = sharksDataset.filter(d => d.shark != "");
 const sharkGroup = d3.group(filterSharksDataset, d => d.shark);
 const industryGroup = d3.group(sharksDataset, d => d.Industry, d => d.startup);
+const annotationDataset = d3.group(sharkAnnotation, d => d.shark);
 let svgContainer = ref(null);
 let svgContainerHeight = ref(null);
 let svgContainerWidth = ref(null);
@@ -88,10 +91,16 @@ function getDimensionValues(value) {
 };
 
 const showSharkInvestments = (value) => {
+  const getTreemapTooltip = treemapAnnotation.filter((d) => d.shark === value[0]);
+  const highestInvestment = getTreemapTooltip.reduce((prev, current) => ((prev.equity_investment_number + prev.debt_investment_number) > (current.equity_investment_number + current.debt_investment_number)) ? prev : current);
+  const lowestInvestment = getTreemapTooltip.reduce((prev, current) => ((prev.equity_investment_number + prev.debt_investment_number) < (current.equity_investment_number + current.debt_investment_number)) ? prev : current);
+  const getAnnotation = annotationDataset.get(value[0])
+  const numberOfInvestments = value[1].length
   const tooltip = `
-  <h1 style='font-size:1.2rem; font-weight:500; padding-bottom:5px;'>${value[0]}</h1>
+  <h1 style='font-size:1.2rem; font-weight:500; padding-bottom:5px;'>${value[0]} - ${numberOfInvestments} investments.</h1>
   <hr style='border:black solid 0.1px;'>
-  <p style='font-weight:400; padding-top:5px;'>${value[0].split(" ")[0]} invested in ${value[1].length} startups.</p>
+  <p style='font-weight:400; padding-top:5px;'>${getAnnotation[0].annotation}</p><br>
+  <p style='font-weight:400; padding-top:5px;'>${value[0].split(" ")[0]}'s highest investment was ${highestInvestment.startup_name} at ₹ ${(highestInvestment.equity_investment_number+highestInvestment.debt_investment_number).toLocaleString('en-IN')} and lowest investment was ${lowestInvestment.startup_name} ₹ ${(lowestInvestment.equity_investment_number+lowestInvestment.debt_investment_number).toLocaleString('en-IN')}.</p>
   `
   return tooltip
 }
@@ -121,15 +130,17 @@ const showIndustryInvestment = (value) => {
 
 const activateLinkPaths = (sharkData) => {
   const sharkName = sharkData[0].replace(/ /g,'')
+  const sharkDataIndustryGroup = d3.group(sharkData[1], d => d.Industry)
+  const getTreemapTooltip = treemapAnnotation.filter((d) => d.shark === sharkData[0]);
+  const tooltipGroup = d3.group(getTreemapTooltip, (d) => d.industry_name);
   const sharkDataValues = sharkData[1];
   sharkDataValues.forEach((shark) => {
     pathLinks.value.forEach((link) => {
       if(link.attributes.class.value === `${shark.startup.replace(/ /g,'')}_${sharkName}`) {
-        link.style.strokeWidth = 1.5
-        
+        link.style.strokeWidth = svgContainerWidth.value < 600 ? 1 : 2.5   
       }
     })
-    startups.value.forEach((startup, index) => {
+    startups.value.forEach((startup) => {
       if(startup.attributes.class.value === shark.startup) {
         startup.style.fill = '#AB59A0'
         startup.style.stroke = '#AB59A0'
@@ -138,7 +149,8 @@ const activateLinkPaths = (sharkData) => {
     industry.value.forEach((industryName) => {
       if (industryName.attributes.class.value === shark.Industry) {
         industryName._tippy.setContent(`
-        ${shark.Industry}
+        ${sharkDataIndustryGroup.get(industryName.attributes.class.value).length} ${shark.Industry} ${sharkDataIndustryGroup.get(industryName.attributes.class.value).length === 1 ? 'investment' : 'investments'} of
+        ₹ ${d3.sum(tooltipGroup.get(industryName.attributes.class.value), d => d.equity_investment_number + d.debt_investment_number).toLocaleString('en-IN')} invested.
         `)
         industryName._tippy.show()
       }
@@ -181,7 +193,6 @@ onMounted(() => {
     getScaleValues(dimensions);
     sharkStartupLinkData(filterSharksDataset, sharks.value, startups.value);
   });
-  console.log(industry.value)
 });
 </script>
 
@@ -213,6 +224,7 @@ onMounted(() => {
               clip-path="url(#sharkImage)"
               class="hover:cursor-pointer"
               v-tippy="{content:showSharkInvestments(shark), theme:'custom'}"
+              @click="($event) => activateLinkPaths(shark)"
               @mouseover="($event) => activateLinkPaths(shark)"
               @mouseleave="($event) => deactivateLinkPaths(shark)"
             >
@@ -230,7 +242,7 @@ onMounted(() => {
               stroke-width="2"
             />
           </g>
-          <g v-for="(industry, i) in industryGroup" :key="i" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
+          <g v-for="(industry, i) in industryGroup" :key="i" class="industryGroupCircle" :transform="`translate(${industryGroupXScale(industry[0])},${industryGroupYScale(industry[0])})`">
             <circle
               ref="industry"
               :cx="industryGroupCxScale(industry[0])"
@@ -240,7 +252,7 @@ onMounted(() => {
               stroke="#F9E272"
               stroke-width="2"
               :class="industry[0]"
-              v-tippy="{theme:'custom', trigger:'manual', placement:'bottom'}"
+              v-tippy="{theme:'custom', trigger:'manual', placement:'bottom', maxWidth: svgContainerWidth < 600 ? 100 : svgContainerWidth < 1100 ? 120 : 250}"
             />
             <path
             class="industryPath"
@@ -280,4 +292,5 @@ onMounted(() => {
 .pathLinksGroup path:hover {
   cursor: pointer;
 }
+
 </style>
