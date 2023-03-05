@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="h-[93vh] grid grid-cols-12 grid-rows-6">
+  <div class="h-[93vh] grid grid-cols-12 grid-rows-6 pt-8">
     <div class="row-span-5 col-span-12 px-8 items-center relative" id="main-div">
       <div class="absolute top-2/3 md:top-3/4 lg:top-1/2 items-center z-10">
         <h1 class="text-3xl md:text-5xl lg:text-7xl py-1 bg-white">Let's Explore Shark Tank India.</h1>

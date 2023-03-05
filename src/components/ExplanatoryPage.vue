@@ -102,12 +102,11 @@
       <p class="text-3xl text-center mb-8">Explanatory Visualization</p>
       <p class="border-2 border-gray-300 font-light text-xl p-6 rounded-lg text-justify">
         The information below is each shark's total money (in rupee) invested, i.e both equity and debt; 
-        The number of deals made by each shark in season one and their <b> individual industry portfolio mix visualized as a treemap chart.</b>
+        The number of deals made by each shark in season one and their <b> individual industry portfolio mix visualized as a treemap chart.</b> <br><br>
         The size of each section of the treemap chart indicates the industry in which significant investment has been made.
-        Annotations have been added to each section of the treemap, showing the industry name, the percentage of total investment and the investment in rupee.
+        Annotations have been added to each section of the treemap, showing the industry name, the percentage of total investment and the investment in rupee. <br><br>
         Additionally tiny icons have been added to denote each startup that received an investment. 
         <b> Hover over the icons </b> to see information of the startup and details of the deal.
-        
       </p>
     </div>
     <div class="grid grid-cols-12 lg:p-2">

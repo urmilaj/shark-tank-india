@@ -237,7 +237,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="pt-2">
+  <div class="pt-10">
     <div class="md:mx-10 lg:mx-8 mb-0 p-2">
       <p class="text-3xl text-center mb-8">Exploratory Visualization</p>
       <p class="border-2 border-gray-300 font-light text-xl p-6 rounded-lg text-justify">
